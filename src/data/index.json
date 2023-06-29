@@ -1,0 +1,13 @@
+{
+    "meta":{
+        "title":"Example.com International - Example.com Index",
+        "description":"Index",
+        "keywords":"",
+        "ogUrl":"",
+        "ogImage":"/images/og-image.png",
+        "lang":"en-US",
+        "dataLang":"en"
+    },
+    "title": "Example.com",
+    "subTitle": "Example.com subTitle"
+}

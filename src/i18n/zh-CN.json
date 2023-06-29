@@ -1,0 +1,20 @@
+{
+    "meta":{
+        "title":"Example.com International - Example.com",
+        "description":"Example.com is passionate about bringing the latest innovations in technology, including affordable, dependable appliances and TVs, into your home.",
+        "keywords":"TVs, home appliance, 4K, ULED",
+        "ogUrl":"",
+        "ogImage":"/images/og-image.png",
+        "lang":"en-US",
+        "dataLang":"en"
+    },
+    "header":
+    {
+    },
+    "footer":
+    {
+    },
+    "common":
+    {
+    }
+}

@@ -1,0 +1,33 @@
+- let globalData = self.htmlWebpackPlugin.options.globalData;
+- let data = self.htmlWebpackPlugin.options.data;
+- let section = self.htmlWebpackPlugin.options.section;
+
+doctype html
+html(
+    lang=`${data.meta.lang}` 
+    xml:lang=`${data.meta.lang}` 
+    data-lang=`${data.meta.dataLang}` 
+    class=`${data.meta.dataLang}`)
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title=`${(section)?data['sections'][section]['title'] + ' | ' + data.meta.title:data.meta.title}`
+        meta(name="description" content=`${data.meta.description}`)
+        meta(name="keywords" content=`${data.meta.keywords}`)
+        meta(property="og:title" content=`${data.meta.title}`)
+        meta(property="og:description" content=`${data.meta.description}`)
+        meta(property="og:image" content=`${data.meta.ogImage}`)
+        link( rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png")
+        link( rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png")
+        link( rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png")
+        link( rel="manifest" href="site.webmanifest")
+        block head
+    body(class=`${(section)?section:''}` data-section=`${(section)?section:''}`)
+        .page-wrapper
+            include ../components/common/header/header
+            block header
+
+            block content
+            
+            include ../components/common/footer/footer
+            block footer
