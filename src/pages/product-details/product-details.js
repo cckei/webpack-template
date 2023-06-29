@@ -1,5 +1,5 @@
 // JS
-import App from '../../layouts/app';
+import App from '../../scripts/app';
 import ComponentA from '../../components/product/component-A/component-A';
 import ComponentB from '../../components/product/component-B/component-B';
 

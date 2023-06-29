@@ -1,5 +1,5 @@
 // JS
-import App from '../../layouts/app';
+import App from '../../scripts/app';
 
 // CSS
 import './about-overview.scss';

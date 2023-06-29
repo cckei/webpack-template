@@ -114,7 +114,6 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
 		new CopyPlugin([
 			{ from: './src/images', to: `${rootFolder}images` },
 			{ from: './src/static', to: `${rootFolder}` },

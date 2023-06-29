@@ -1,9 +1,7 @@
 // JS
-import App from '../../layouts/app';
-
+import App from '../../scripts/app';
 // CSS
 import './index.scss';
-
 
 class Index extends App
 {

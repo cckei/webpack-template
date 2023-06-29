@@ -3,12 +3,8 @@ import $ from "jquery";
 import Header from '../components/common/header/header';
 import Footer from '../components/common/footer/footer';
 
-// CSS
-import "../styles/tailwind.css";
-import './app.scss';
-
 // JSON
-import Config from '../scripts/config';
+import Config from './config';
 
 // HOT MODULE
 if (module.hot) module.hot.accept();
