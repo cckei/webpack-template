@@ -19,6 +19,11 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 		chunkFilename: `${rootFolder}scripts/[name].js`
 	},
+	resolve: {
+		alias: {
+		  images: path.resolve(__dirname, 'src/images/'), //handling the image url in scss
+		},
+	},
 	module: {
 		rules: [
 			{
