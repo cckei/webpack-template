@@ -17,8 +17,9 @@ To install the dependencies
 ```bat
 npm install
 ```
+## Run the project
 
-To run the project locally
+To run the project with localhost
 ```bat
 npm run start
 ```
