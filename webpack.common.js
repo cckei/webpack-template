@@ -39,21 +39,6 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(png|svg|jpe?g|gif)$/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							// outputPath: '../images/',
-							outputPath: `${rootFolder}/images/`,
-							useRelativePath: false,
-                            name: '[name].[ext]',
-                            // publicPath: "images/"
-						}
-					}
-				]
-			},
-			{
 				test: /\.(eot|ttf|woff|woff2)$/,
 				use: [
 					{

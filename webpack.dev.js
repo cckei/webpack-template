@@ -17,20 +17,20 @@ module.exports = merge(common, {
 			{
 				test: /\.scss$/,
 				use: ['style-loader','css-loader', 'postcss-loader', 'sass-loader']
-			}
-			// {
-			// 	test: /\.(png|svg|jpe?g|gif)$/,
-			// 	use: [
-			// 		{
-			// 			loader: 'file-loader',
-			// 			options: {
-			// 				outputPath: 'images/',
-			// 				useRelativePath: true,
-			// 				name: '[name].[ext]'
-			// 			}
-			// 		}
-			// 	]
-			// },
+			},
+			{
+				test: /\.(png|svg|jpe?g|gif)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'images/',
+							publicPath: 'images/'
+						}
+					}
+				]
+			},
 		]
 	}
 });
